@@ -24,11 +24,25 @@
   - `~/hub/` — this central knowledge hub repo (git initialized)
 - **Cron:** Daily RPInvest runner, IBKR Gateway health check timer
 
-## Gaming PC
-- **GPU:** NVIDIA GTX 1080 Ti (11 GB VRAM)
-- **Status:** Currently offline / not on network
-- **Planned:** Ollama for local LLM inference, Tailscale, openclaw provider
-- **LAN:** Not yet discovered (was not online during network scan)
+## Gaming PC (1080)
+- **Hostname:** desktop-csn80jb
+- **GPU:** NVIDIA GTX 1080 Ti (11 GB VRAM), CUDA 12.9, Driver 576.28
+- **RAM:** 32 GB
+- **Tailscale IP:** 100.119.168.35 ✓ ONLINE
+- **Status:** ACTIVE as of 2026-05-24
+- **OS:** Windows 11 Pro
+- **Software:** Ollama 0.24.0 (5 models), OpenClaw, Claude Code, Python 3.11, Node.js 24
+- **Ollama models:** mistral:7b, gemma2:9b, qwen2.5:7b, llama3.1:8b, qwen2.5:14b
+- **Ollama endpoint:** http://100.119.168.35:11434 (Tailscale-scoped, pending bind config)
+- **Storage:**
+  - C: 512GB SSD (OS, apps) — 41 GB free (critical, watch)
+  - D: 4TB HDD — encrypted backups only
+  - E: 120GB portable — raw storage
+  - F: 4.5TB USB HDD — incoming data from network devices
+- **Roles:** Compute on demand, Ollama LLM backend, Storage, Researcher, Live-Trader support, Smart Home Controller
+- **Local repos:** `~/hub/`, `~/second-brain/`
+- **SSH:** pending admin setup (OpenSSH server not yet installed)
+- **OpenClaw:** running, Telegram bot active (@cUjAL_bot), Ollama wired as provider
 
 ## Cloud Environment
 - Accessible from iPhone
