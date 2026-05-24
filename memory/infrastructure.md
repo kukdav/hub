@@ -41,8 +41,11 @@
   - F: 4.5TB USB HDD — incoming data from network devices
 - **Roles:** Compute on demand, Ollama LLM backend, Storage, Researcher, Live-Trader support, Smart Home Controller
 - **Local repos:** `~/hub/`, `~/second-brain/`
-- **SSH:** pending admin setup (OpenSSH server not yet installed)
+- **SSH client:** configured — `~/.ssh/config` with `rpi` (Tailscale) + `rpi-local` (LAN 192.168.0.185) entries; key `~/.ssh/rpi_ed25519` (regen in progress — old passphrase-protected key still present)
+- **SSH server:** pending admin setup (OpenSSH server not yet installed on Gaming PC)
 - **OpenClaw:** running, Telegram bot active (@cUjAL_bot), Ollama wired as provider
+- **CLAUDE_USB:** G: drive (57GB SanDisk exFAT) — labeled CLAUDE_USB, folders: hub/ inbox/ keys/ archive/, CLAUDE.md present
+- **file-agent.py:** `--dry-run` flag added (C:\Users\Gaming-PC\Scripts\file-agent.py)
 
 ## Cloud Environment
 - Accessible from iPhone
