@@ -13,9 +13,9 @@ Every Claude Code / AI session should read this repo first.
 See `memory/infrastructure.md` for full details.
 - **Surface Pro 8** — daily driver, Windows 11, Claude Code, openclaw
 - **Raspberry Pi** — always-on server, RPInvest trading system, cron jobs, Tailscale SSH
-- **Gaming PC** — GTX 1080 Ti (11GB VRAM), for local LLM inference (Ollama), currently offline
+- **Gaming PC** — GTX 1080 Ti (11GB VRAM), Ollama exposed on tailnet at `http://100.119.168.35:11434`, ONLINE
 - **Cloud** — iPhone-accessible coding environment, limited (no Telegram, sandboxed)
-- **Tailscale** — mesh VPN connecting all devices (RPi: 100.122.247.36)
+- **Tailscale** — mesh VPN connecting all devices (RPi: 100.83.139.98, Gaming PC: 100.119.168.35)
 
 ## Key Projects
 See `memory/projects.md` for full details.

@@ -10,9 +10,9 @@
 
 ## Raspberry Pi (always-on server)
 - **LAN IP:** 192.168.0.185 (raspberrypi.local)
-- **Tailscale IP:** 100.122.247.36
+- **Tailscale IP:** 100.83.139.98
 - **SSH:** `ssh rpi` (Tailscale) or `ssh rpi-local` (LAN)
-- **Key:** C:\Users\david\.ssh\rpi_ed25519
+- **Key:** `~/.ssh/rpi_ed25519_new` (Gaming PC) — no passphrase, authorized on Pi
 - **User:** david
 - **Software:** Python, Claude Code, gh CLI, Tailscale SSH, cron
 - **Key paths:**
@@ -33,7 +33,7 @@
 - **OS:** Windows 11 Pro
 - **Software:** Ollama 0.24.0 (5 models), OpenClaw, Claude Code, Python 3.11, Node.js 24
 - **Ollama models:** mistral:7b, gemma2:9b, qwen2.5:7b, llama3.1:8b, qwen2.5:14b
-- **Ollama endpoint:** http://100.119.168.35:11434 (Tailscale-scoped, pending bind config)
+- **Ollama endpoint:** http://100.119.168.35:11434 — live, bound to 0.0.0.0, reachable from all tailnet devices
 - **Storage:**
   - C: 512GB SSD (OS, apps) — 41 GB free (critical, watch)
   - D: 4TB HDD — encrypted backups only
@@ -41,7 +41,7 @@
   - F: 4.5TB USB HDD — incoming data from network devices
 - **Roles:** Compute on demand, Ollama LLM backend, Storage, Researcher, Live-Trader support, Smart Home Controller
 - **Local repos:** `~/hub/`, `~/second-brain/`
-- **SSH client:** configured — `~/.ssh/config` with `rpi` (Tailscale) + `rpi-local` (LAN 192.168.0.185) entries; key `~/.ssh/rpi_ed25519` (regen in progress — old passphrase-protected key still present)
+- **SSH client:** configured — `~/.ssh/config` with `rpi` (Tailscale 100.83.139.98) + `rpi-local` (LAN 192.168.0.185); key `~/.ssh/rpi_ed25519_new` (no passphrase)
 - **SSH server:** OpenSSH Server running with autostart
 - **OpenClaw:** gateway Scheduled Task installed, Telegram bot active (@cUjAL_bot), Ollama works without cloud API keys
 - **CLAUDE_USB:** G: drive (57GB SanDisk exFAT) — labeled CLAUDE_USB, folders: hub/ inbox/ keys/ archive/, CLAUDE.md present
