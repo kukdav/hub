@@ -49,3 +49,11 @@
 - Single source of truth for all AI sessions
 - Memory files for persistent context
 - Cloned on all devices
+
+## Second Brain
+**Location:** Gaming PC `C:\Users\Gaming-PC\second-brain\`
+- Obsidian vault and local knowledge base
+- Git remote: `rpi:/home/david/git/second-brain.git`
+- Remote host: Raspberry Pi over SSH alias `rpi`
+- Branch: `master`
+- Workflow: process `knowledge-inbox` locally with Ollama, commit, then push to Pi remote
