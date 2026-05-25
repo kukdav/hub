@@ -11,7 +11,7 @@ metadata:
 | Device | Role | Tailscale IP | Status |
 |---|---|---|---|
 | Gaming PC (1080) | Compute, AI, storage, network specialist | 100.119.168.35 | Online, SSH, OpenClaw, Ollama |
-| RPi 4B | Orchestrator, always-on, RPInvest | 100.122.247.36 | Online LAN, Tailscale status unclear |
+| RPi 4B | Orchestrator, always-on, RPInvest | 100.122.247.36 | Online, reachable via Tailscale |
 | Surface Pro 8 | Human interface, banking, docs, dev | 100.112.191.59 | Pending factory reset |
 | iPhone Firma | Always-with, voice, Telegram | on tailnet | Active |
 | Pixel 6 Graphene | Privacy SSH client, sensitive tasks | — | Available |
@@ -73,7 +73,7 @@ CLAUDE_USB/
 - No large files — stays lean
 
 ## Pi Tailscale Status
-- SSH key found: D:\Sorted\Review\rpi_ed25519
-- SSH config needed on Gaming PC: ~/.ssh/config with Host rpi → 100.122.247.36
-- Pi Tailscale: reportedly not working — needs check next session
-- Connection to verify: Gaming PC → Pi via Tailscale SSH
+- SSH config present on Gaming PC: `~/.ssh/config` with `Host rpi` -> `100.122.247.36` and `Host rpi-local` -> `192.168.0.185`
+- SSH key: `~/.ssh/rpi_ed25519` on Gaming PC; old passphrase-protected key may still exist
+- Pi Tailscale: reachable at `100.122.247.36`
+- Connection path: Gaming PC -> Pi via Tailscale SSH

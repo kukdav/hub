@@ -42,8 +42,8 @@
 - **Roles:** Compute on demand, Ollama LLM backend, Storage, Researcher, Live-Trader support, Smart Home Controller
 - **Local repos:** `~/hub/`, `~/second-brain/`
 - **SSH client:** configured — `~/.ssh/config` with `rpi` (Tailscale) + `rpi-local` (LAN 192.168.0.185) entries; key `~/.ssh/rpi_ed25519` (regen in progress — old passphrase-protected key still present)
-- **SSH server:** pending admin setup (OpenSSH server not yet installed on Gaming PC)
-- **OpenClaw:** running, Telegram bot active (@cUjAL_bot), Ollama wired as provider
+- **SSH server:** OpenSSH Server running with autostart
+- **OpenClaw:** gateway Scheduled Task installed, Telegram bot active (@cUjAL_bot), Ollama works without cloud API keys
 - **CLAUDE_USB:** G: drive (57GB SanDisk exFAT) — labeled CLAUDE_USB, folders: hub/ inbox/ keys/ archive/, CLAUDE.md present
 - **file-agent.py:** `--dry-run` flag added (C:\Users\Gaming-PC\Scripts\file-agent.py)
 
@@ -58,8 +58,7 @@
 - **Key devices on LAN:** RPi (.185), Surface (.154), LG TV (.151)
 
 ## openclaw
-- **Config:** C:\Users\david\.openclaw\openclaw.json
-- **Gateway:** local mode, token auth
-- **Token:** configured in openclaw.json
-- **Status:** Gateway runs, no LLM provider configured (no API keys)
-- **Pending:** Telegram bot channel, free LLM provider (Groq/Gemini/Ollama)
+- **Config:** C:\Users\Gaming-PC\.openclaw\
+- **Gateway:** Scheduled Task installed on Gaming PC
+- **Status:** Telegram bot active (@cUjAL_bot); Ollama usable locally without cloud API keys
+- **Pending:** Optional API keys only when explicitly approved
